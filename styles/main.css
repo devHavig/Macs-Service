@@ -1,0 +1,110 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(130, 131, 133);
+}
+
+body,
+html {
+  height: 80%;
+}
+
+/* Header color change */
+header span {
+  color: white;
+  text-shadow: 2px 2px #111;
+}
+
+/* Nav-bar */
+.nav-bar,
+li a {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(80, 80, 80);
+  transition: 0.4s ease;
+}
+
+ul.nav-bar li a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+ul.nav-bar li {
+  float: left;
+}
+
+/* Nav bar border line border */
+li {
+  float: left;
+  border-right: 1px solid black;
+}
+
+/* Hovering over nav buttons when there not active */
+ul.nav-bar li a:hover:not(.active) {
+  background-color: #111;
+  box-shadow: 0 0 20px 0 #ddd;
+}
+
+/* Active page color */
+ul.nav-bar li a.active {
+  background-color: #5779b8;
+  box-shadow: 0 0 20px 0 #111;
+}
+
+/* Hero Image */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/mac-hero.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Hero Image Text */
+.hero-text {
+  position: absolute;
+  top: 20%;
+  left: 16%;
+  transform: translate(-50%, -50%);
+  color: #ddd;
+}
+
+/* Grid Layout */
+.container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-gap: 1em;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  grid-auto-rows: 350px;
+}
+
+.container > div {
+  background-color: rgb(138, 139, 141);
+  box-shadow: 0 0 10px 0 #111;
+  padding: 1em;
+}
+
+/* Grid Photo */
+.container > .photo {
+  background-color: rgb(130, 131, 133);
+  box-shadow: none;
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.photo img {
+  width: 450px;
+  height: 675px;
+  border: solid 2.5px rgb(80, 80, 80);
+}
